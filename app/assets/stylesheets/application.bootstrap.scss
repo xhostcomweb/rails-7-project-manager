@@ -15,10 +15,12 @@ body > .alert {
   background-image: url('../../assets/images/rails.webp');
 }
 .header {
-  background: #472C88;
+  background: #2c3f88;
+  color: white;
 }
 .bi {
-  background: #472C88;
+  background: #2c3f88;
+  color: white;
 }
 
 .price {
@@ -71,7 +73,7 @@ body > .alert {
 /* Style the back side */
 .flip-card-back {
   background-color: white;
-  color: black;
+  color: #222;
   transform: rotateY(180deg);
   padding:50px 0px;
 }
