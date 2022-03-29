@@ -13,10 +13,10 @@ body > .alert {
 // Homepage
 
 .header {
-  background:#00C9FF;
+  background: #472C88;
 }
 .bi {
-  color:#00C9FF;
+  background: #472C88;
 }
 
 .price {
@@ -60,7 +60,7 @@ body > .alert {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #00C9FF;
+  background: linear-gradient(to right, #472C88, #282963);
   color: white;
   height: auto;
   padding:50px 0px;
