@@ -25,7 +25,7 @@ gem 'puma', '~> 5.0'
 gem 'view_component'
 
 # Multi Tenant Row-level multitenancy (ease of filtering records)
-gem 'acts_as_tenant'
+# gem 'acts_as_tenant'
 
 # Http & cookies
 gem 'mechanize'

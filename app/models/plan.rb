@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Plan < ApplicationRecord
-  belongs_to :member
+  # belongs_to :member
   PLANS = %i[free standard turbo].freeze
 
   def self.options

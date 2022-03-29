@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
-  acts_as_tenant(:member)
   devise :masqueradable, :database_authenticatable, :confirmable, :registerable, :trackable, :recoverable,
          :rememberable, :validatable, :omniauthable
   # Validations, Names, Avatars
@@ -15,4 +14,5 @@ class User < ApplicationRecord
   # Notifications & Services
   has_many :notifications, as: :recipient
   has_many :services
+  # has_many :members
 end
