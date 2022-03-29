@@ -24,8 +24,8 @@ gem 'puma', '~> 5.0'
 # View Components/Partials
 gem 'view_component'
 
-# Multi Tenant no data leak (if enable extra config needed see Readme)
-gem 'multi-tenant-support'
+# Multi Tenant Row-level multitenancy (ease of filtering records)
+gem 'acts_as_tenant'
 
 # Http & cookies
 gem 'mechanize'
@@ -78,7 +78,7 @@ gem 'devise', git: 'https://github.com/heartcombo/devise', branch: 'main'
 gem 'devise_masquerade', '~> 1.3'
 gem 'pundit'
 
-# Processes
+# Processes/Jobs
 gem 'sidekiq', '~> 6.2'
 
 # Sitemap

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base # rubocop:todo Style/Documentation
+  set_current_tenant_by_subdomain(:member, :subdomain)
   include Pundit::Authorization
 
   protect_from_forgery with: :exception
