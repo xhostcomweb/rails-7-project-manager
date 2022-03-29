@@ -1,4 +1,7 @@
 <div class="container p-4">
+  <% if current_user %>
+    <h3>Organization: <%= member.name %></h3>
+    <% else %>
   <div class="row top-header">
   <h1 class="display-6 uppercase mt-3 mb-3">Welcome to our Project Manager App!</h1>
   <p class="lead mb-5">You'll love managing your project with our SaaS application. <br /> Please take a look at our comprehensive plans. </p>
