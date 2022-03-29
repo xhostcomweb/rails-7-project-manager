@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  acts_as_tenant(:member)
   devise :masqueradable, :database_authenticatable, :confirmable, :registerable, :trackable, :recoverable,
          :rememberable, :validatable, :omniauthable
-  acts_as_tenant(:member)
   # Validations, Names, Avatars
   validates :email, presence: true
   validates :email, uniqueness: true
