@@ -25,7 +25,7 @@ gem 'puma', '~> 5.0'
 gem 'view_component'
 
 # Multi Tenant no data leak (if enable extra config needed see Readme)
-# gem 'multi-tenant-support'
+gem 'multi-tenant-support'
 
 # Http & cookies
 gem 'mechanize'
