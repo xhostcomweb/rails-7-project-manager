@@ -2,7 +2,9 @@
  <!-- testing user roles -->
   <% if current_user  %>
     <p>Hello <%= current_user.first_name %></p>
-    <p> You have successfully activated your account in/as a registered <%= current_user.role %> role</p>
+    <p> You have successfully activated your account in/as a registered <%= current_user.role %> role
+    on the <%= current_user.plan %> plan!</p>
+
     <p>Awesome!</p>
     <% end %>
   <div class="row top-header">
