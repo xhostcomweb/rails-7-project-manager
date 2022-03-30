@@ -7,4 +7,6 @@ class Plan < ApplicationRecord
   def self.options
     PLANS.map { |plan| [plan.capitalize, plan] }
   end
+
+  def set
 end
