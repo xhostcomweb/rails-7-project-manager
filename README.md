@@ -4,8 +4,8 @@ Ruby On Rails 7 SaaS Project Management app with PostgreSQL, Redis Caching, Boot
 
 ## Roles ##
 
-* Admin as boolean flag on User model (manual - in console)
-* Member and other roles as enum on User model
+* Admin as boolean flag on User model (manual - switch it in console)
+* Member and other roles as enum integer on User model (write methods as required)
 
 # JS & CSS Bundling with Rollup - no webpack/webpacker
 
@@ -36,7 +36,7 @@ After first set email & db credentials in .env file (for PostgreSQL, cp .env.exa
 
 * Hotwire
 
-4. $ rails hotwire:install
+4. $ rails hotwire:install  (dont overwrite, request js module declared in root .ts file )
 
 5. $ bin/rails db:migrate:reset
 
@@ -47,7 +47,7 @@ As above be sure to copy .env.example > .env and enter details, or adapt to suit
 
 ## Optional
 
-8. $ rails stimulus_reflex:install (extra config needed see link above)
+8. $ rails stimulus_reflex:install (extra config needed see link [https://docs.stimulusreflex.com/])
 
 # Optional
 
