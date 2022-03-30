@@ -1,8 +1,8 @@
 # rails 7 sass project manager app
 
-Ruby On Rails 7 SaaS Project Management app with PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise, Notifications, Announcements, Rollup, Importmap, CSS Bundling, JS Bundling, Administrate, Hotwire, Stimulus and Action Cable/Cable Ready & Request JS. (Strada coming soon) 
+Ruby On Rails 7 SaaS Project Management app with PostgreSQL, Redis Caching, Bootstrap 5, Font Awesome 5, Devise & Roles, Notifications, Announcements, Rollup, Importmap, CSS Bundling, JS Bundling, Administrate, Hotwire, Stimulus and Action Cable/Cable Ready & Request JS. (Strada coming soon) 
 
-## Roles ##
+## Roles - Devise User Model ##
 
 * Admin as boolean flag on User model (manual - switch it in console)
 * Member and other roles as enum integer on User model (write methods as required)
