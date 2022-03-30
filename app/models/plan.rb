@@ -8,5 +8,7 @@ class Plan < ApplicationRecord
     PLANS.map { |plan| [plan.capitalize, plan] }
   end
 
-  def set
+  def self.set_member_plan
+
+  end
 end
