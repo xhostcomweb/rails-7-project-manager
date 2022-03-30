@@ -1,8 +1,9 @@
 <div class="container p-4">
+ <!-- testing user roles -->
   <% if current_user  %>
-    <p>Hello <%= current_user.email %></p>
-    <p> You have successfully activated your account</p>
-    <p>Proceed</p>
+    <p>Hello <%= current_user.first_name %></p>
+    <p> You have successfully activated your account in/as a registered <%= current_user.role %> role</p>
+    <p>Awesome!</p>
     <% end %>
   <div class="row top-header">
   <h1 class="display-6 uppercase mt-3 mb-3">Welcome to our Project Manager App!</h1>
