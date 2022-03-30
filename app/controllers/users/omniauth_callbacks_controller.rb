@@ -61,7 +61,7 @@ module Users
         # 5. User is logged out and they login to a new account which doesn't match their old one
         flash[:alert] =
           # rubocop:todo Layout/LineLength
-          "An account with this email already exists. Please sign in with that account before connecting your #{auth.provider.titleize} account."
+          "A user account with this email already exists. Please sign in with that account before connecting your #{auth.provider.titleize} account."
         # rubocop:enable Layout/LineLength
         redirect_to new_user_session_path
       else
@@ -82,6 +82,7 @@ module Users
 
     def create_user
       User.create(
+        account: auth.info.account,
         email: auth.info.email,
         username: auth.info.username,
         password: Devise.friendly_token[0, 20]

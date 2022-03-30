@@ -33,9 +33,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0] # rubocop:todo Style/Docu
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-      # Roles & Plans
+      # Roles, Plans & Account
       t.integer :role, default: 0, null: false
       t.integer :plan, default: 0, null: false
+      t.integer :account_id, null: true
 
       t.string :first_name
       t.string :last_name
@@ -45,6 +46,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0] # rubocop:todo Style/Docu
       t.timestamps null: false
     end
     # add_index :users, :username, unique: true
+    # add_index :users, :account_id, unique: true
     add_index :users, :email, unique: true
     add_index :users, :reset_password_token, unique: true
     add_index :users, :confirmation_token,   unique: true

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Service < ApplicationRecord # rubocop:todo Style/Documentation
+  include AccountOwnable
   belongs_to :user
 
   Devise.omniauth_configs.each_key do |provider|

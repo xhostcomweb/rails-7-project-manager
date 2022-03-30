@@ -11,6 +11,7 @@ class CreateServices < ActiveRecord::Migration[7.0] # rubocop:todo Style/Documen
       t.string :refresh_token
       t.datetime :expires_at
       t.text :auth
+      t.integer :account_id, null: true
 
       t.timestamps
     end

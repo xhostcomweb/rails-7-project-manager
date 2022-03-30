@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  include AccountOwnable
   after_initialize :set_default_role, :set_default_plan, if: :new_record?
   devise :masqueradable, :database_authenticatable, :confirmable, :registerable, :trackable, :recoverable,
          :rememberable, :validatable, :omniauthable
@@ -26,6 +27,7 @@ class User < ApplicationRecord
   # Notifications & Services
   has_many :notifications, as: :recipient
   has_many :services
+  has_many :projects
   # Methods
   def set_default_role
     self.role ||= :user
