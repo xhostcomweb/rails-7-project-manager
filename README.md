@@ -5,7 +5,7 @@ Ruby On Rails 7 SaaS Project Management app with PostgreSQL, Redis Caching, Boot
 ## Roles - Devise User Model ##
 
 * Admin as boolean flag on User model (manual - switch it in console)
-* Member and other roles as enum integer on User model (write methods as required)
+* Member and other roles as enum integer (hash) on User model (write methods as required)
 
 # JS & CSS Bundling with Rollup - no webpack/webpacker
 
